@@ -5,11 +5,11 @@ const Todo = () => {
   const todos = useSelector((state) => state.todos);
   const dispatch = useDispatch();
   return (
-    <div className="mt-6 w-full text-white flex flex-col items-center gap-1">
+    <li className="mt-6 w-full text-white flex flex-col items-center gap-1">
       {todos.length > 0 ? (
         todos.map((todo, index) => {
           return (
-            <div
+            <ul
               key={todo.id}
               className="bg-slate-500 rounded w-11/12 max-w-2xl px-3 py-1 flex justify-between"
             >
@@ -17,13 +17,13 @@ const Todo = () => {
               <button onClick={() => dispatch(removeTodo(todo.id))}>
                 <MdOutlineDelete />
               </button>
-            </div>
+            </ul>
           );
         })
       ) : (
         <h2 className="text-black text-2xl">{"No tasks yet 😢"}</h2>
       )}
-    </div>
+    </li>
   );
 };
 export default Todo;

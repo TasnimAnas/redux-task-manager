@@ -20,7 +20,7 @@ const AddTodo = () => {
           placeholder="Add new task"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          className="px-2 py-1 bg-white rounded w-1/2 border-none"
+          className="px-2 py-1 bg-white rounded w-1/2 border-none mr-1"
         />
         <button
           type="submit"

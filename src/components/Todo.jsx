@@ -21,7 +21,7 @@ const Todo = () => {
           );
         })
       ) : (
-        <h2 className="text-black text-4xl">{"No Tasks Yet :("}</h2>
+        <h2 className="text-black text-3xl">{"No Tasks Yet 😢"}</h2>
       )}
     </div>
   );

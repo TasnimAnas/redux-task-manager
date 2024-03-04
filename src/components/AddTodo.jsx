@@ -15,6 +15,7 @@ const AddTodo = () => {
     <div className="bg-slate-500 p-5 rounded w-11/12 max-w-2xl text-center mt-7">
       <form onSubmit={addTodoHandler}>
         <input
+          required
           type="text"
           name="todo"
           placeholder="Add new task"
